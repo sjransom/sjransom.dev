@@ -24,16 +24,16 @@ const Header = () => {
       <nav>
         <ul className={headerStyles.navList}>
           <li>
-            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">Home</Link>
+            <Link className={`${headerStyles.navItem} ${headerStyles.site}`} activeClassName={headerStyles.activeNavItem} to="/">home</Link>
           </li>
           <li>
-            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/blog">Blog</Link>
+            <Link className={`${headerStyles.navItem} ${headerStyles.site}`} activeClassName={headerStyles.activeNavItem} to="/blog">blog</Link>
           </li>
           <li>
-            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about">About</Link>
+            <a className={headerStyles.navItem} href="https://github.com/sjransom/" target="_blank" rel="noopener noreferrer">github</a>
           </li>
           <li>
-            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/contact">Contact</Link>
+            <a className={headerStyles.navItem} href="https://twitter.com/sjransom" target="_blank" rel="noopener noreferrer">twitter</a>
           </li>
         </ul>
       </nav>
