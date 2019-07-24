@@ -1,6 +1,6 @@
 ---
 title: "Blah blah"
-date: "2019-07-11"
+date: "24 July 2019"
 ---
 
 Blah blah blah
