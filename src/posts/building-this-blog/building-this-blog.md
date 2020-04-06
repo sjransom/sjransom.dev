@@ -1,6 +1,6 @@
 ---
 title: "How I built this blog"
-date: "2020-04-06"
+date: "06 April 2020"
 ---
 
 [![Andrew Mead's Gatsby Course](./gatsby-course.png)](https://www.youtube.com/watch?v=8t0vNu2fCCM)
