@@ -1,7 +1,3 @@
-.page-title {
-  font-size: 1.8rem;
-}
-
 .posts {
   list-style-type: none;
   margin: 0;
@@ -28,7 +24,29 @@
 
   p {
     color: #777777;
-    font-size: .8rem;
+    font-size: 0.8rem;
     font-style: italic;
+  }
+}
+
+.blog-title {
+  padding-top: 3rem;
+}
+
+.container {
+  display: flex;
+}
+
+.me {
+  //border-radius: 50%;
+  padding-left: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: block;
+  }
+  .me {
+    padding-left: 0;
   }
 }

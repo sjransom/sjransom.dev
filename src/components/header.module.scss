@@ -6,7 +6,7 @@
 }
 
 .title {
-  color: #EE4037;
+  color: #ee4037;
   font-size: 2rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -20,7 +20,7 @@
 
 .nav-item {
   color: #333333;
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin-right: 1.3rem;
   text-decoration: none;
   &.site {
@@ -31,7 +31,6 @@
 .nav-item:hover {
   text-decoration: underline;
 }
-
 
 @media only screen and (max-width: 600px) {
   .header {

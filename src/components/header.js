@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link, graphql, useStaticQuery } from 'gatsby'
+import React from "react"
+import { Link, graphql, useStaticQuery } from "gatsby"
 
-import headerStyles from './header.module.scss'
+import headerStyles from "./header.module.scss"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -24,16 +24,33 @@ const Header = () => {
       <nav>
         <ul className={headerStyles.navList}>
           <li>
-            <Link className={`${headerStyles.navItem} ${headerStyles.site}`} activeClassName={headerStyles.activeNavItem} to="/">home</Link>
+            <Link
+              className={`${headerStyles.navItem} ${headerStyles.site}`}
+              activeClassName={headerStyles.activeNavItem}
+              to="/"
+            >
+              home
+            </Link>
           </li>
           <li>
-            <Link className={`${headerStyles.navItem} ${headerStyles.site}`} activeClassName={headerStyles.activeNavItem} to="/blog">blog</Link>
+            <a
+              className={headerStyles.navItem}
+              href="https://github.com/sjransom/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github
+            </a>
           </li>
           <li>
-            <a className={headerStyles.navItem} href="https://github.com/sjransom/" target="_blank" rel="noopener noreferrer">github</a>
-          </li>
-          <li>
-            <a className={headerStyles.navItem} href="https://twitter.com/sjransom" target="_blank" rel="noopener noreferrer">twitter</a>
+            <a
+              className={headerStyles.navItem}
+              href="https://twitter.com/sjransom"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              twitter
+            </a>
           </li>
         </ul>
       </nav>
