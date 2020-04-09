@@ -44,7 +44,7 @@ const IndexPage = () => {
           </p>
         </div>
         <div>
-          <img className={homeStyles.me} src={sam} />
+          <img className={homeStyles.me} src={sam} alt="Sam Ransom" />
         </div>
       </div>
       <h2 className={homeStyles.blogTitle}>Blog</h2>
