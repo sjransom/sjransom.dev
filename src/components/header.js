@@ -1,7 +1,7 @@
-import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import React from 'react'
+import { Link, graphql, useStaticQuery } from 'gatsby'
 
-import headerStyles from "./header.module.scss"
+import headerStyles from './header.module.scss'
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -31,6 +31,11 @@ const Header = () => {
             >
               home
             </Link>
+          </li>
+          <li>
+            <a className={headerStyles.navItem} href="/cv/">
+              cv
+            </a>
           </li>
           <li>
             <a
