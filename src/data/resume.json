@@ -58,13 +58,12 @@
     {
       "language": "English",
       "fluency": "Native speaker"
-    }
-  ],
-  "interests": [
+    },
     {
-      "name": "Wildlife",
-      "keywords": ["Ferrets", "Unicorns"]
+      "language": "French",
+      "fluency": "Proficient"
     }
   ],
+  "interests": [],
   "references": []
 }

@@ -26,10 +26,6 @@ const CV = () => {
               endDate
               gpa
             }
-            interests {
-              name
-              keywords
-            }
             languages {
               language
               fluency
@@ -53,16 +49,24 @@ const CV = () => {
   `)
 
   const info = data.allDataJson.edges[0].node
-
-  const { basics } = info
+  const { basics, languages } = info
 
   return (
-    <React.Fragment>
+    <>
       <Head title="CV" />
       <section>
         <p>{basics.name}</p>
+        <ul>
+          {languages.map(item => {
+            return (
+              <li key={item.language}>
+                {item.language} - {item.fluency}
+              </li>
+            )
+          })}
+        </ul>
       </section>
-    </React.Fragment>
+    </>
   )
 }
 
