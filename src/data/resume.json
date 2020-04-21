@@ -1,0 +1,88 @@
+{
+  "basics": {
+    "name": "Sam Ransom",
+    "label": "Developer",
+    "picture": "",
+    "email": "sjransom@gmail.com",
+    "phone": "07380 254730",
+    "website": "https://sjransom.dev",
+    "summary": "A summary of John Doe...",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "London",
+      "countryCode": "UK",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "sjransom",
+        "url": "https://twitter.com/sjransom"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "sjransom",
+        "url": "https://uk.linkedin.com/in/sjransom"
+      },
+      {
+        "network": "Github",
+        "username": "sjransom",
+        "url": "https://github.com/sjransom"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Nationwide Building Society",
+      "position": "Software Engineer",
+      "website": "",
+      "startDate": "2019-08-12",
+      "endDate": "",
+      "summary": "Description...",
+      "highlights": ""
+    },
+    {
+      "company": "WebMD Global",
+      "position": "Front End Developer",
+      "website": "",
+      "startDate": "2017-06-05",
+      "endDate": "2019-07-31",
+      "summary": "Description...",
+      "highlights": ""
+    }
+  ],
+  "education": [
+    {
+      "institution": "De Montfort University",
+      "area": "Multimedia Computing",
+      "studyType": "BSc",
+      "startDate": "2008-09-20",
+      "endDate": "2011-06-01",
+      "gpa": "2.2",
+      "courses": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": ["HTML", "CSS", "Javascript"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "French",
+      "fluency": "Working profiency"
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "volunteer": [],
+  "interests": [],
+  "references": []
+}
