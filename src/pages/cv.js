@@ -1,7 +1,10 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
+import layoutStyles from '../components/cv/layout.module.scss'
+
 import Head from '../components/head'
+import Bio from '../components/cv/bio'
 
 const CV = () => {
   const data = useStaticQuery(graphql`
@@ -17,6 +20,15 @@ const CV = () => {
               phone
               website
               summary
+              location {
+                city
+                countryCode
+              }
+              profiles {
+                network
+                username
+                url
+              }
             }
             education {
               institution
@@ -49,13 +61,14 @@ const CV = () => {
   `)
 
   const info = data.allDataJson.edges[0].node
-  const { basics, languages } = info
+
+  const { basics, education, languages, skills, work } = info
 
   return (
     <>
       <Head title="CV" />
-      <section>
-        <p>{basics.name}</p>
+      <section className={layoutStyles.container}>
+        <Bio basics={basics} />
         <ul>
           {languages.map(item => {
             return (

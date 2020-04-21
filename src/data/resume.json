@@ -1,56 +1,72 @@
 {
   "basics": {
-    "name": "John Doe",
-    "label": "Programmer",
+    "name": "Sam Ransom",
+    "label": "Developer",
     "picture": "",
-    "email": "john@gmail.com",
-    "phone": "(912) 555-4321",
-    "website": "http://johndoe.com",
+    "email": "sjransom@gmail.com",
+    "phone": "07380 254730",
+    "website": "https://sjransom.dev",
     "summary": "A summary of John Doe...",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "",
+      "postalCode": "",
+      "city": "London",
+      "countryCode": "UK",
+      "region": ""
     },
     "profiles": [
       {
         "network": "Twitter",
-        "username": "john",
-        "url": "http://twitter.com/john"
+        "username": "sjransom",
+        "url": "https://twitter.com/sjransom"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "sjransom",
+        "url": "https://uk.linkedin.com/in/sjransom"
+      },
+      {
+        "network": "Github",
+        "username": "sjransom",
+        "url": "https://github.com/sjransom"
       }
     ]
   },
   "work": [
     {
-      "company": "Company",
-      "position": "President",
-      "website": "http://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
+      "company": "Nationwide Building Society",
+      "position": "Software Engineer",
+      "website": "",
+      "startDate": "2019-08-12",
+      "endDate": "",
       "summary": "Description...",
-      "highlights": ["Started the company"]
+      "highlights": ""
+    },
+    {
+      "company": "WebMD Global",
+      "position": "Front End Developer",
+      "website": "",
+      "startDate": "2017-06-05",
+      "endDate": "2019-07-31",
+      "summary": "Description...",
+      "highlights": ""
     }
   ],
-  "volunteer": [],
   "education": [
     {
-      "institution": "University",
-      "area": "Software Development",
-      "studyType": "Bachelor",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01",
-      "gpa": "4.0",
-      "courses": ["DB1101 - Basic SQL"]
+      "institution": "De Montfort University",
+      "area": "Multimedia Computing",
+      "studyType": "BSc",
+      "startDate": "2008-09-20",
+      "endDate": "2011-06-01",
+      "gpa": "2.2",
+      "courses": ""
     }
   ],
-  "awards": [],
-  "publications": [],
   "skills": [
     {
       "name": "Web Development",
-      "level": "Master",
+      "level": "",
       "keywords": ["HTML", "CSS", "Javascript"]
     }
   ],
@@ -61,9 +77,12 @@
     },
     {
       "language": "French",
-      "fluency": "Proficient"
+      "fluency": "Working profiency"
     }
   ],
+  "awards": [],
+  "publications": [],
+  "volunteer": [],
   "interests": [],
   "references": []
 }
