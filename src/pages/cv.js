@@ -5,6 +5,7 @@ import layoutStyles from '../components/cv/layout.module.scss'
 
 import Head from '../components/head'
 import Bio from '../components/cv/bio'
+import Main from '../components/cv/main'
 
 const CV = () => {
   const data = useStaticQuery(graphql`
@@ -26,7 +27,6 @@ const CV = () => {
               }
               profiles {
                 network
-                username
                 url
               }
             }
@@ -36,7 +36,6 @@ const CV = () => {
               studyType
               startDate
               endDate
-              gpa
             }
             languages {
               language
@@ -61,23 +60,26 @@ const CV = () => {
   `)
 
   const info = data.allDataJson.edges[0].node
-
   const { basics, education, languages, skills, work } = info
 
   return (
     <>
       <Head title="CV" />
-      <section className={layoutStyles.container}>
-        <Bio basics={basics} />
-        <ul>
-          {languages.map(item => {
-            return (
-              <li key={item.language}>
-                {item.language} - {item.fluency}
-              </li>
-            )
-          })}
-        </ul>
+      <section className={layoutStyles.cvBack}>
+        <div className={layoutStyles.container}>
+          <div className={`${layoutStyles.leftSide} ${layoutStyles.card}`}>
+            <Bio basics={basics} />
+          </div>
+          <div className={`${layoutStyles.rightSide} ${layoutStyles.card}`}>
+            <Main
+              basics={basics}
+              education={education}
+              languages={languages}
+              skills={skills}
+              work={work}
+            />
+          </div>
+        </div>
       </section>
     </>
   )

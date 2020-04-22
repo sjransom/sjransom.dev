@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Sam Ransom",
-    "label": "Developer",
+    "label": "Front End Developer",
     "picture": "",
     "email": "sjransom@gmail.com",
     "phone": "07380 254730",
     "website": "https://sjransom.dev",
-    "summary": "A summary of John Doe...",
+    "summary": "A hard working, competent and personable web developer with strong and wide-ranging technical competencies, able to work with a minimum of supervision, quickly and to a high standard. I have over 5 years of commercial work experience across several different industries and companies to develop and maintain business critical web assets.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -17,17 +17,17 @@
     "profiles": [
       {
         "network": "Twitter",
-        "username": "sjransom",
+        "username": "",
         "url": "https://twitter.com/sjransom"
       },
       {
         "network": "LinkedIn",
-        "username": "sjransom",
+        "username": "",
         "url": "https://uk.linkedin.com/in/sjransom"
       },
       {
         "network": "Github",
-        "username": "sjransom",
+        "username": "",
         "url": "https://github.com/sjransom"
       }
     ]
@@ -38,7 +38,7 @@
       "position": "Software Engineer",
       "website": "",
       "startDate": "2019-08-12",
-      "endDate": "",
+      "endDate": "Present",
       "summary": "Description...",
       "highlights": ""
     },
@@ -48,7 +48,61 @@
       "website": "",
       "startDate": "2017-06-05",
       "endDate": "2019-07-31",
-      "summary": "Description...",
+      "summary": "Worked as part of a large agile development team alongside designers, writers, editors to develop websites and apps for medical professionals.",
+      "highlights": ""
+    },
+    {
+      "company": "AIMIA",
+      "position": "Front End Developer",
+      "website": "",
+      "startDate": "2016-04-16",
+      "endDate": "2016-12-20",
+      "summary": "Worked as the principal Front End developer in an agile environment alongside a .NET team to develop a fully compliant WCAG website for a leading Australian bank.",
+      "highlights": ""
+    },
+    {
+      "company": "Insurance Australia Group",
+      "position": "Front End/UI Developer",
+      "website": "",
+      "startDate": "2014-07-20",
+      "endDate": "2016-04-06",
+      "summary": "Developing in an Agile environment working across multiple projects and teams. Main responsibilities include: 1. Building user interfaces based on wire frames provided by User Experience designers as well as business requirements drafted by up Business Analysts. 2. Contributing to our component library by creating reusable UI components. 3. \"Responsifying\" existing web applications to optimize for mobile.",
+      "highlights": ""
+    },
+    {
+      "company": "Oakton",
+      "position": "Front End Developer",
+      "website": "",
+      "startDate": "2014-06-20",
+      "endDate": "2014-07-17",
+      "summary": "Short term contract tasked with improving an existing websites Internet Explorer 8 experience as well as general bug and style fixing. Technologies primarily used during this role were SASS and JavaScript.",
+      "highlights": ""
+    },
+    {
+      "company": "Rice Warner Actuaries",
+      "position": "Front End Developer",
+      "website": "",
+      "startDate": "2014-05-05",
+      "endDate": "2014-05-30",
+      "summary": "Hands-on JavaScript heavy role working on a bespoke, cloud-based and responsive financial planning application developed for a major Australian bank.",
+      "highlights": ""
+    },
+    {
+      "company": "True Alliance",
+      "position": "Front End Developer",
+      "website": "",
+      "startDate": "2014-02-20",
+      "endDate": "2014-04-30",
+      "summary": "Working as a contracted front-end developer on two main projects for multiple globally recognised fashion brands. (Lacoste, UGG, Lee and Ben Sherman)",
+      "highlights": ""
+    },
+    {
+      "company": "Voyages-sncf.com UK (formerly Rail Europe UK Ltd.)",
+      "position": "Web Developer",
+      "website": "",
+      "startDate": "2012-07-19",
+      "endDate": "2014-12-31",
+      "summary": "Worked as the principle web developer within the eCommerce team. Also was a key member in rebranding from ‘Rail Europe’ to ‘Voyages-sncf’ including migration of content management systems (from DotNetNuke to Drupal) and redesign of webpages and customer emails.",
       "highlights": ""
     }
   ],
@@ -59,7 +113,7 @@
       "studyType": "BSc",
       "startDate": "2008-09-20",
       "endDate": "2011-06-01",
-      "gpa": "2.2",
+      "gpa": "",
       "courses": ""
     }
   ],

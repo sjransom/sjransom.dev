@@ -1,8 +1,25 @@
+.cvBack {
+  background-color: #f0f0f0;
+}
+
 .container {
   margin: 0 auto;
   max-width: 970px;
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+}
+
+.card {
+  padding: 1rem;
+}
+
+.leftSide {
+  background-color: #ffffff;
+  width: 30%;
+  margin-right: 0.5rem;
+}
+
+.rightSide {
+  background-color: #ffffff;
+  width: 70%;
 }
