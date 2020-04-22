@@ -97,7 +97,7 @@
       "highlights": ""
     },
     {
-      "company": "Voyages-sncf.com UK (formerly Rail Europe UK Ltd.)",
+      "company": "Voyages-sncf.com",
       "position": "Web Developer",
       "website": "",
       "startDate": "2012-07-19",
@@ -119,9 +119,17 @@
   ],
   "skills": [
     {
-      "name": "Web Development",
+      "name": "",
       "level": "",
-      "keywords": ["HTML", "CSS", "Javascript"]
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "ES6",
+        "React/React Native",
+        "Redux",
+        "NodeJS"
+      ]
     }
   ],
   "languages": [

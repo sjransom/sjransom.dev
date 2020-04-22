@@ -1,5 +1,5 @@
 import React from 'react'
-import mainStyles from '../components/cv/main.module.scss'
+import mainStyles from './main.module.scss'
 
 const Main = props => {
   const {
@@ -7,23 +7,26 @@ const Main = props => {
     work
   } = props
   return (
-    <section>
-      <h2 className={mainStyles.test}>About</h2>
+    <div>
+      <h2 className={mainStyles.mainHeading}>About</h2>
       <p>{summary}</p>
-      <h2>Experience</h2>
-      {work.map(job => {
-        return (
-          <li key={job.company}>
-            <p>{job.company}</p>
-            <p>{job.position}</p>
-            <p>
-              {job.startDate} - {job.endDate}
-            </p>
-            <p>{job.summary}</p>
-          </li>
-        )
-      })}
-    </section>
+      <h2 className={mainStyles.mainHeading}>Experience</h2>
+      <ul className={mainStyles.workList}>
+        {work.map(job => {
+          return (
+            <li key={job.company}>
+              <h3 className={mainStyles.workTitle}>
+                {job.position} - {job.company}
+              </h3>
+              <p>
+                {job.startDate} - {job.endDate}
+              </p>
+              <p>{job.summary}</p>
+            </li>
+          )
+        })}
+      </ul>
+    </div>
   )
 }
 

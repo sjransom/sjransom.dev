@@ -1,11 +1,11 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
-import layoutStyles from '../components/cv/layout.module.scss'
-
 import Head from '../components/head'
 import Bio from '../components/cv/bio'
 import Main from '../components/cv/main'
+
+import layoutStyles from '../components/cv/layout.module.scss'
 
 const CV = () => {
   const data = useStaticQuery(graphql`
@@ -42,8 +42,7 @@ const CV = () => {
               fluency
             }
             skills {
-              name
-              level
+              keywords
             }
             work {
               company
@@ -65,12 +64,12 @@ const CV = () => {
   return (
     <>
       <Head title="CV" />
-      <section className={layoutStyles.cvBack}>
+      <div className={layoutStyles.cvBack}>
         <div className={layoutStyles.container}>
-          <div className={`${layoutStyles.leftSide} ${layoutStyles.card}`}>
+          <section className={`${layoutStyles.leftSide} ${layoutStyles.card}`}>
             <Bio basics={basics} />
-          </div>
-          <div className={`${layoutStyles.rightSide} ${layoutStyles.card}`}>
+          </section>
+          <section className={`${layoutStyles.rightSide} ${layoutStyles.card}`}>
             <Main
               basics={basics}
               education={education}
@@ -78,9 +77,9 @@ const CV = () => {
               skills={skills}
               work={work}
             />
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
     </>
   )
 }

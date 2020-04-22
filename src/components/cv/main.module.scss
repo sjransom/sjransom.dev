@@ -1,3 +1,18 @@
-.test {
-  font-size: 1rem;
+.mainHeading {
+  font-size: 2rem;
+  border-bottom: 1px solid #000;
+  margin-bottom: 1rem;
+  padding-bottom: 0.8rem;
+}
+
+.workTitle {
+  font-size: 1.2rem;
+}
+
+.workList {
+  list-style-type: none;
+  margin-left: 0;
+  li {
+    margin-bottom: 1.5rem;
+  }
 }

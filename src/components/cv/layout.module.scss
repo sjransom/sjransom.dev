@@ -23,3 +23,19 @@
   background-color: #ffffff;
   width: 70%;
 }
+
+@media only screen and (max-width: 600px) {
+  .cvBack {
+    background-color: #fff;
+  }
+  .container {
+    display: block;
+  }
+  .leftSide {
+    margin-right: 0rem;
+  }
+  .leftSide,
+  .rightSide {
+    width: auto;
+  }
+}
