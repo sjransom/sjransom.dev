@@ -1,8 +1,8 @@
 {
   "basics": {
     "name": "Sam Ransom",
-    "label": "Front End Developer",
-    "picture": "",
+    "label": "Developer",
+    "picture": "/static/sam-ba4c583d5606f592e56795f8b41ac078.jpg",
     "email": "sjransom@gmail.com",
     "phone": "07380 254730",
     "website": "https://sjransom.dev",
@@ -39,7 +39,7 @@
       "website": "",
       "startDate": "2019-08-12",
       "endDate": "",
-      "summary": "TBC",
+      "summary": "To do...",
       "highlights": ""
     },
     {

@@ -7,6 +7,16 @@
   max-width: 970px;
   padding: 0.5rem;
   display: flex;
+  &.backButtonContainer {
+    padding: 0.2rem 0.5rem;
+  }
+}
+
+.backButton {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .card {

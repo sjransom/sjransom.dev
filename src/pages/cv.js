@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery, Link } from 'gatsby'
 
 import Head from '../components/head'
 import Bio from '../components/cv/bio'
@@ -65,6 +65,13 @@ const CV = () => {
     <>
       <Head title="CV" />
       <div className={layoutStyles.cvBack}>
+        <div
+          className={`${layoutStyles.container} ${layoutStyles.backButtonContainer}`}
+        >
+          <Link className={layoutStyles.backButton} to="/">
+            {'<'} Back
+          </Link>
+        </div>
         <div className={layoutStyles.container}>
           <section className={`${layoutStyles.leftSide} ${layoutStyles.card}`}>
             <Bio basics={basics} />

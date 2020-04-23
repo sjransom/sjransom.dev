@@ -10,7 +10,7 @@ const Main = props => {
   } = props
 
   return (
-    <div>
+    <>
       <h2 className={mainStyles.mainHeading}>About</h2>
       <p>{summary}</p>
       <h2 className={mainStyles.mainHeading}>Experience</h2>
@@ -33,7 +33,7 @@ const Main = props => {
           )
         })}
       </ul>
-    </div>
+    </>
   )
 }
 
