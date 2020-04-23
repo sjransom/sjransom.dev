@@ -1,4 +1,6 @@
 import React from 'react'
+import moment from 'moment'
+
 import mainStyles from './main.module.scss'
 
 const Main = props => {
@@ -6,6 +8,7 @@ const Main = props => {
     basics: { summary },
     work
   } = props
+
   return (
     <div>
       <h2 className={mainStyles.mainHeading}>About</h2>
@@ -16,12 +19,16 @@ const Main = props => {
           return (
             <li key={job.company}>
               <h3 className={mainStyles.workTitle}>
-                {job.position} - {job.company}
+                <span className={mainStyles.jobPosition}>{job.position} -</span>{' '}
+                {job.company}
               </h3>
-              <p>
-                {job.startDate} - {job.endDate}
+              <p className={mainStyles.date}>
+                {moment(job.startDate).format('MMM YYYY')} -{' '}
+                {job.endDate === ''
+                  ? 'Present'
+                  : moment(job.endDate).format('MMM YYYY')}
               </p>
-              <p>{job.summary}</p>
+              <p className={mainStyles.jobDescription}>{job.summary}</p>
             </li>
           )
         })}
