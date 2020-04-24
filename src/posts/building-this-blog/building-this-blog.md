@@ -9,7 +9,7 @@ I built this blog following Andrew Mead's 'The Great Gatsby Bootcamp' which you 
 
 It is just over 4 and a half hours long but the course is split into 20 chapters and gives you a great overview of Gatsby. I think this course it suitable for beginner developers with some basic HTML, CSS and JS experience looking to learn a little React, GraphQL and NodeJS.
 
-### What is Gatsby JS?
+### What is Gatsby?
 
 Gatsby is a framework for creating blazing fast websites and web applications. Powered by React and GraphQL, Gatsby gives you everything you need to build and launch your next project.
 

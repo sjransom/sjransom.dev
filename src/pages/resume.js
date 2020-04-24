@@ -2,12 +2,12 @@ import React from 'react'
 import { graphql, useStaticQuery, Link } from 'gatsby'
 
 import Head from '../components/head'
-import Bio from '../components/cv/bio'
-import Main from '../components/cv/main'
+import Bio from '../components/resume/bio'
+import Main from '../components/resume/main'
 
-import layoutStyles from '../components/cv/layout.module.scss'
+import layoutStyles from '../components/resume/layout.module.scss'
 
-const CV = () => {
+const Resume = () => {
   const data = useStaticQuery(graphql`
     query {
       allDataJson {
@@ -91,4 +91,4 @@ const CV = () => {
   )
 }
 
-export default CV
+export default Resume
