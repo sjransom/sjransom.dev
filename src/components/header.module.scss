@@ -16,6 +16,11 @@
   display: flex;
   list-style-type: none;
   margin: 0;
+  li:last-child {
+    .nav-item {
+      margin-right: 0;
+    }
+  }
 }
 
 .nav-item {
