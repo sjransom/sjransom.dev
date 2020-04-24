@@ -1,4 +1,4 @@
-.cvBack {
+.cv-back {
   background-color: #f0f0f0;
 }
 
@@ -12,7 +12,7 @@
   }
 }
 
-.backButton {
+.back-button {
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -23,29 +23,29 @@
   padding: 1rem;
 }
 
-.leftSide {
+.left-side {
   background-color: #ffffff;
   width: 30%;
   margin-right: 0.5rem;
 }
 
-.rightSide {
+.right-side {
   background-color: #ffffff;
   width: 70%;
 }
 
 @media only screen and (max-width: 600px) {
-  .cvBack {
+  .cv-back {
     background-color: #fff;
   }
   .container {
     display: block;
   }
-  .leftSide {
+  .left-side {
     margin-right: 0rem;
   }
-  .leftSide,
-  .rightSide {
+  .left-side,
+  .right-side {
     width: auto;
   }
 }

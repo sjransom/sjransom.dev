@@ -8,3 +8,9 @@
   color: #c38633;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 600px) {
+  .blog-title {
+    font-size: 2rem;
+  }
+}
