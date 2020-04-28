@@ -217,7 +217,7 @@ Let's breakdown what's going on in our component. `useStaticQuery` is a hook tha
 
 Inside our render function we can render the data to the screen as simply as using `<p>{basics.name}</p>`
 
-If we'd like to query our JSON for more information all we need to do is add it to the GraphQL query, let's add the `profiles` section - as it's part of the `basics` object we can add it like so:
+Let's query our JSON for some more information - start by adding it to the GraphQL query, let's add the `profiles` section - as it's part of the `basics` object we can add it like so:
 
 ```
 query {
