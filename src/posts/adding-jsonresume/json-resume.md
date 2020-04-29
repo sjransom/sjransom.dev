@@ -3,11 +3,17 @@ title: 'Adding JSON Resume to Gatsby'
 date: '28 April 2020'
 ---
 
+### Introduction
+
 This guide will assume you already have a basic level of React and GraphQL as well as blog built with Gatsby already set up, if you haven't you can build one following the guide in this [post](./building-this-blog).
 
-The [JSON Resume](https://jsonresume.org/) is an open-source project to create a JSON-based standard for resumes. You may ask 'why would you want to use this?' - personally I think it's much cleaner to have all your information stored in one central JSON file rather than keeping it inside static HTML files, it's much easier to update in the future and also if you ever want to change the theme of your resume this will make it a lot less fiddly. At this stage you can add all of your own information and experience to the schema or just use the pre-filled dummy copy for now, save this file into `src/data/resome.json`.
+The [JSON Resume](https://jsonresume.org/) is an open-source project to create a JSON-based standard for resumes. You may ask 'why would you want to use this?' - personally I think it's much cleaner to have all your information stored in one central JSON file rather than keeping it inside static HTML files, it's much easier to update in the future and also if you ever want to change the theme of your resume this will make it a lot less fiddly.
 
-Example JSON Resume schema:
+### Schema
+
+Let's get started, firstly create a json file and save it to `src/data/resome.json`. At this stage you can add all of your own information and experience to the schema or just use the pre-filled dummy copy for now
+
+Example JSON Resume schema from jsonresume.org:
 
 ```json
 {
@@ -117,12 +123,14 @@ Example JSON Resume schema:
 }
 ```
 
+### Gatsby plugins/GraphQL queries
+
 The first thing to do is to add the `gatsby-transformer-json` plugin and the `gatsby-source-filesystem` (you may already have this added). `gatsby-transformer-json` parses raw JSON strings into JavaScript objects e.g. from JSON files (this means we can access it using the GraphQL API). `gatsby-source-filesystem` is a source plugin for sourcing data into your Gatsby application from your local filesystem.
 
 You can install these both like below:  
 `npm i --save gatsby-source-filesystem gatsby-transformer-json`
 
-In your `gatsby-config.js` file make sure to point the `gatsby-source-filesystem` path to your `src`:
+In your `gatsby-config.js` file make sure to point the `gatsby-source-filesystem` path to your `src` folder:
 
 ```
 plugins: [
@@ -137,7 +145,7 @@ plugins: [
 ]
 ```
 
-First off let's create our GraphQL query, because of the `gatsby-transformer-json` plugin we have access to the root type `allDataJson` - using Graph<i>i</i>QL (Graph<i>i</i>QL is an interface for testing out your GraphQL queries), which is accessible from `http://localhost:8000/___graphql` we can get the data from our `resume.json` - let's try get our name with the following query:
+First off let's create our GraphQL query, because of the `gatsby-transformer-json` plugin we have access to the root type `allDataJson` - using Graph<i>i</i>QL, which is accessible from `http://localhost:8000/___graphql`, we can retrieve the data from our `resume.json` file. Let's try get our name with the following query:
 
 ```
 {
@@ -153,7 +161,7 @@ First off let's create our GraphQL query, because of the `gatsby-transformer-jso
 }
 ```
 
-This query will return:
+This query should return:
 
 ```
 {
@@ -173,7 +181,9 @@ This query will return:
 }
 ```
 
-Awesome! Now we are ready to create a component so that we can render this data to a page:
+### Rendering
+
+Now we are ready to create a component so that we can render this data to a page:
 
 ```
 import React from 'react'
@@ -251,7 +261,7 @@ This will return an array of objects with our social networks:
 ]
 ```
 
-We can use ES6 `map()` method to create a list which can be rendered to the screen:
+We can use ES6 `map` array method to create a list which can be rendered to the screen. The `map` method will loop through the `profiles` array and return a `<li>` element for each profile with a URL in the `<a>`.
 
 ```
 <ul>
@@ -267,6 +277,8 @@ We can use ES6 `map()` method to create a list which can be rendered to the scre
 </ul>
 ```
 
-I hope this guide gives you the basis to create and render your own JSON Resume, if you need anything clarified or any help please feel free to tweet me [@sjransom](https://twitter.com/sjransom) - thanks for reading!
+### Conclusion
 
-Github repo is [here](https://github.com/sjransom/sjransom.dev) for your reference.
+I hope this guide gives you the basis to create and render your own JSON Resume, I didn't feel it was neccersary to add anything around styling but JSON resume actually include a number of themes which are free to use, you can find them all [here](https://jsonresume.org/themes/). Alternatively you are welcome to take the theme for my resume which you can find [here](../resume).
+
+If you need anything clarified or any help please feel free to tweet me [@sjransom](https://twitter.com/sjransom) - thanks for reading! The Github repo is [here](https://github.com/sjransom/sjransom.dev) which contains the full solution.
