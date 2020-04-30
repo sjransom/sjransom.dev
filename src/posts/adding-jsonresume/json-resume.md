@@ -236,9 +236,10 @@ query {
       node {
         basics {
           name
-        profiles {
-          network
-          url
+          profiles {
+            network
+            url
+          }
         }
       }
     }
